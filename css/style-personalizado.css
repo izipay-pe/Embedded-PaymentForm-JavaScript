@@ -1,0 +1,97 @@
+/*** Color de todos los textos dentro del formulario ***/
+/*
+span{
+    color: rgb(230, 10, 10) !important;
+}
+*/
+
+/*** maneja la posicion vertical de las etiquetas ***/
+.kr-field-wrapper{
+    margin-top: 6px !important;
+    margin-left: 10px !important;
+}
+
+/*** div para controlar el formulario ***/
+.formulario{    
+    background-image:url("../image/logo-izipay.png");
+    background-color: #fff;
+    background-position: center top 15px;
+    background-size: 160px ;
+    background-repeat: no-repeat;
+    border: 1px solid #b3b6b5;
+    border-radius: 6px;
+    box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+    padding: 25px;
+    margin-left: -15px;   
+    width:380px;    
+    min-height: 90px;
+}
+
+
+/*** Maneja la caja del formulario de pago ***/
+.kr-embedded{
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #b3b6b5;    
+    box-shadow: 0px 10px 25px rgba(92, 99, 105, .2);
+    padding: 20px;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;    
+}
+
+/*** Número de tarjeta ***/
+.kr-pan{
+    margin-top: 14px !important;
+    height: 45px !important;
+    border-radius: 4px !important;
+}
+
+/*** Fecha de tarjeta ***/
+.kr-expiry{
+    height: 45px !important;
+    border-radius: 4px !important;
+    max-width: 49% !important;
+}
+
+/*** Codigo CVV ***/
+.kr-security-code{
+    height: 45px !important;
+    border-radius: 4px !important;
+    max-width: 49% !important;
+}
+
+/*** Cuotas ***/
+.kr-installment-number{
+    border-radius: 4px !important;
+    height: 45px !important;
+}
+
+/*** Pago diferido ***/
+.kr-first-installment-delay{
+    border-radius: 4px !important;
+    height: 45px !important;
+}
+
+/* Button */
+.kr-embedded .kr-payment-button {
+    color: #ffffff !important;
+    background-color: #00A09D !important;
+    border-radius: 4px !important;
+    height:55px !important;
+    margin-bottom: 0px !important;
+}
+  
+.kr-embedded .kr-payment-button span:hover{
+    transition-duration: 0.2s;
+    font-size: large;
+    text-shadow: -0.5px -0.5px 0.5px #000, 0.5px 0.5px 0.5px #000, -0.5px 0.5px 0.5px #000, 0.5px -0.5px 0.5px #000;
+}
+  
+.kr-embedded .kr-payment-button:hover {
+    background-color: #3DD2CE !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+}
