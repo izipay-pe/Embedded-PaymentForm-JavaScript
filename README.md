@@ -17,7 +17,7 @@ En este manual podrás encontrar una guía paso a paso para configurar un proyec
 Este manual está diseñado para ayudarte a comprender el flujo de la integración de la pasarela para ayudarte a aprovechar al máximo tu proyecto y facilitar tu experiencia de desarrollo.
 
 <p align="center">
-  <img src="https://github.com/izipay-pe/Imagenes/blob/main/formulario_incrustado/formulario_incrustado.png" alt="Formulario" width="350"/>
+  <img src="https://github.com/izipay-pe/Imagenes/blob/main/formulario_incrustado/Imagen-Formulario-Incrustado.png" alt="Formulario" width="350"/>
 </p>
 
 <a name="Requisitos_Previos"></a>
