@@ -78,7 +78,7 @@ function displayPaymentForm(formToken)
 	KR.showForm(result.formId))
 
 	// Agregar oyente para enviar evento
-	//KR.onSubmit(onPaid); // Si esta activo no funciona el atributo "kr-get-url-success" que se encuentra en index.html para redireccionar la de pago exitoso
+	//KR.onSubmit(onPaid); // Si esta activo, no funciona el atributo "kr-get-url-success" que se encuentra en index.html para redireccionar la de pago exitoso
 }
 
 /**
