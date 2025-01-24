@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Resultado de Pago</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Estilos -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" 
+		  integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" 
+		  crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.css" />
+	<link rel="stylesheet" href="./style/style.css" />
+	
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Navegación principal -->
+        <nav class="navbar bg-primary" style="background-color: #FF2D46 !important;">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand mb-1">
+                    <img src="https://iziweb001b.s3.amazonaws.com/webresources/img/logo.png" width="80" alt="Logo">
+                </a>
+            </div>
+        </nav>
+
+        <!-- Contenido dinámico -->
+        <div id="dynamicContent"></div>
+    </main>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="center-column col-md-6">
+                    <section class="result-form">
+                        <h2>Resultado de pago:</h2>
+                        <hr>
+                        <p><strong>Estado:</strong> <span id="orderStatus"></span></p>
+                        <p><strong>Monto:</strong> <span id="orderTotalAmount"></span> <span id="orderCurrency"></span></p>
+                        <p><strong>Order-id:</strong> <span id="orderId"></span></p>
+                        <hr>
+                        <details open>
+                            <summary><h2>Respuesta recibida del servidor:</h2></summary>
+                            <pre>
+{
+    "kr-hash": <span id='hash'></span>,
+    "kr-hash-algorithm": "<span id='hashAlgorithm'></span>",
+    "kr-answer-type": "<span id='_type'></span>",
+    "kr-answer": "<span id='krAnswer'></span>",
+    "kr-hash-key": "<span id='hashKey'></span>"
+}
+                            </pre>
+                        </details>
+                        <hr>
+                        <details>
+                            <summary><h2>kr-answer:</h2></summary>
+                            <pre>
+<span id="kranswer"></span>
+                            </pre>
+                        </details>
+                        <hr>                        
+                        <button class="btn btn-primary" onclick="window.location.href='index.html';">Volver a probar</button>
+                    </section>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </section>
+        <div id="test"></div>
+    </main>
+    <script src="./js/resultadoCompra.js"></script>
+</body>
+</html>
